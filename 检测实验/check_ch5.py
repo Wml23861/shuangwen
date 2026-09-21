@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import re, sys
 
-path = r"E:\爽文\新书项目\正文\第一卷\05_第五章_周家的价码.md"
+path = sys.argv[1] if len(sys.argv) > 1 else r"E:\爽文\新书项目\正文\第一卷\05_第五章_内部价.md"
 with open(path, encoding="utf-8") as f:
     text = f.read()
 
